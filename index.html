@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="navy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet Eren Büyükakyol (CoYgon) — Portföy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark"></span>
+        <span>coygon.me</span>
+      </a>
+
+      <nav class="nav" aria-label="Bölümler">
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#skills">Yetkinlikler</a>
+      </nav>
+
+      <div class="theme-switcher" role="group" aria-label="Tema seçici">
+        <button type="button" class="theme-btn is-active" data-set-theme="navy">Siyah-Lacivert</button>
+        <button type="button" class="theme-btn" data-set-theme="bw">Siyah-Beyaz</button>
+        <button type="button" class="theme-btn" data-set-theme="yw">Sarı-Beyaz</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">PORTFÖY · AHMET EREN BÜYÜKAKYOL (CoYgon)</div>
+          <h1>Düşük seviyeli sistemler, <span class="accent">çekirdekler</span> ve ağ projeleri.</h1>
+          <p class="lead">
+            Merhaba, ben Ahmet Eren. İşletim sistemi çekirdekleri, derleyici/dil deneyleri,
+            ağ protokolleri ve siber güvenlik araçları geliştiren bir yazılım ve sistem geliştiricisiyim.
+            Kontrollü, hızlı ve sade mühendislik çözümleri üretmeye odaklanıyorum.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Projeleri İncele</a>
+            <a href="https://github.com/CoYgon" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              GitHub Profili
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card tilt-card" id="about">
+          <div class="profile-top">
+            <div class="avatar">CE</div>
+            <div>
+              <h2>Ahmet Eren Büyükakyol</h2>
+              <p class="handle">@CoYgon · İstanbul</p>
+            </div>
+          </div>
+
+          <p class="profile-bio">
+            C, C++, Rust, Zig, Assembly, Python, Java, Kotlin ve Dart ekosistemlerinde üretken;
+            işletim sistemi mimarisi, ağ iletişimi ve güvenlik alanlarında aktif projeler geliştiriyor.
+          </p>
+
+          <dl class="meta-grid">
+            <div>
+              <dt>Alan Adı</dt>
+              <dd>coygon.me</dd>
+            </div>
+            <div>
+              <dt>Ana Odak</dt>
+              <dd>Kernel · OS · NetSec</dd>
+            </div>
+            <div>
+              <dt>Çalışma Tarzı</dt>
+              <dd>Minimal & Performans</dd>
+            </div>
+            <div>
+              <dt>Yayın</dt>
+              <dd>Cloudflare Pages</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ÖNE ÇIKAN ÇALIŞMALAR</span>
+            <h2>Projelerim</h2>
+          </div>
+
+          <div class="filters" role="group" aria-label="Proje kategorisi">
+            <button type="button" class="filter-chip is-active" data-filter="all">Tümü</button>
+            <button type="button" class="filter-chip" data-filter="os">OS & Çekirdek</button>
+            <button type="button" class="filter-chip" data-filter="net">Ağ & Güvenlik</button>
+            <button type="button" class="filter-chip" data-filter="tools">Araçlar</button>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+          <article class="project-card tilt-card" data-category="os">
+            <div class="card-head">
+              <span class="tag">OS / Linux</span>
+              <span class="status">Aktif</span>
+            </div>
+            <h3>NexoraOS</h3>
+            <p>
+              Temiz sistem davranışı, akıcı arayüz ve özelleştirilebilir yapı odaklı işletim sistemi çalışması.
+            </p>
+            <div class="stack-pills">
+              <span>Linux</span>
+              <span>Systems</span>
+              <span>UI</span>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card" data-category="os">
+            <div class="card-head">
+              <span class="tag">Kernel & Compiler</span>
+              <span class="status">Geliştirme</span>
+            </div>
+            <h3>Argon, Many OS & R+</h3>
+            <p>
+              Hibrit 32/64-bit çekirdek mimarisi, sunucu odaklı Many OS yaklaşımı ve Assembly üreten R+ dil deneyi.
+            </p>
+            <div class="stack-pills">
+              <span>C / C++</span>
+              <span>Assembly</span>
+              <span>Kernel</span>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card" data-category="net">
+            <div class="card-head">
+              <span class="tag">P2P & Ağ</span>
+              <span class="status">Aktif</span>
+            </div>
+            <h3>AfetLink Pro & PLS</h3>
+            <p>
+              Çevrimdışı P2P şifreli iletişim mimarisi, yönlendirme/acil durum sunucu kurgusu ve protokol başlatıcı (PLS).
+            </p>
+            <div class="stack-pills">
+              <span>P2P</span>
+              <span>Kotlin / Dart</span>
+              <span>Protokol</span>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card" data-category="tools">
+            <div class="card-head">
+              <span class="tag">CLI & Sistem</span>
+              <span class="status">Hazır</span>
+            </div>
+            <h3>DomainPlus & Cache Cleaner</h3>
+            <p>
+              Alan adı ve geliştirici iş akışları için araçlar ile çok iş parçacıklı C++17 sistem önbellek temizleyicisi.
+            </p>
+            <div class="stack-pills">
+              <span>C++17</span>
+              <span>Win32</span>
+              <span>CLI</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">TEKNİK ALTYAPI</span>
+            <h2>Nelerle Çalışıyorum?</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box tilt-card">
+            <h3>Sistem & Düşük Seviye</h3>
+            <p>Bellek yönetimi, donanım yakınlığı, çekirdek/süreç mantığı, derleyici ve betik araçları.</p>
+          </div>
+          <div class="skill-box tilt-card">
+            <h3>Ağ & Siber Güvenlik</h3>
+            <p>Ağ protokolleri, tünel/yönlendirme kurguları, servis analizi ve güvenlik odaklı geliştirme.</p>
+          </div>
+          <div class="skill-box tilt-card">
+            <h3>Uygulama & Web</h3>
+            <p>Masaüstü/mobil araçlar, otomasyon sistemleri ve Cloudflare Pages üzerinden sade web arayüzleri.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>Ahmet Eren Büyükakyol (CoYgon) · coygon.me</span>
+      <span id="year-label"></span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
